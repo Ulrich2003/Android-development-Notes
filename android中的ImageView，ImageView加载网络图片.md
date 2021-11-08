@@ -11,12 +11,20 @@
         android:scaleType="fitXY"/>
 ```
 
+
 #### ImageView加载网路图片
-导入Glide图片加载框架
+**第一步：添加网络权限**
+
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+![在这里插入图片描述](https://img-blog.csdnimg.cn/4b4287fef59e4851bae890a5ffcd8b6d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQ2h1YW5ZYW5nIENoZW4=,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+**第二步：导入Glide图片加载框架**
 [GitHub地址：https://github.com/bumptech/glide/](https://github.com/bumptech/glide/)
 添加Gradle依赖到项目中
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/c530ec35bcc948d49df049c8446d4799.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQ2h1YW5ZYW5nIENoZW4=,size_20,color_FFFFFF,t_70,g_se,x_16)
-在Activity对应的java文件中，使用Glide加载网络图片
+**第三步：在Activity对应的java文件中，使用Glide加载网络图片**
 
 ```java
 public class ImageViewActivity extends AppCompatActivity {
@@ -35,4 +43,8 @@ public class ImageViewActivity extends AppCompatActivity {
 ```
 最终效果：
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/df883847337543dc99bd05843196a2c0.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQ2h1YW5ZYW5nIENoZW4=,size_20,color_FFFFFF,t_70,g_se,x_16)
+#### 调整图片的显示比例类型
+![在这里插入图片描述](https://img-blog.csdnimg.cn/649554113afa472e81c4dc584a64ab9b.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAQ2h1YW5ZYW5nIENoZW4=,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+
 
